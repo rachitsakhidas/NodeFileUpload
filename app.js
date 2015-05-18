@@ -27,7 +27,7 @@ app.use("/uploads",express.static(__dirname + "/uploads"));
 
 app.use('/', routes);
 app.use('/users', users);
-
+console.log('testing');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
