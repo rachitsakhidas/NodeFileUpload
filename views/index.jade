@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form#uploadForm(enctype='multipart/form-data',action='/api/photos',method='post') 
+    input#userPhotoInput(type='file',name='userPhoto')
+
+  span#status
+  img#uploadedImage
+
+  script(src='/javascripts/jquery.min.js')
+  script(src='/javascripts/jquery.form.js')
+  script(src='/javascripts/upload.js')
